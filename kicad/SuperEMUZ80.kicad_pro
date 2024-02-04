@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.5
+          "min_clearance": 0.0
         }
       },
       "diff_pair_dimensions": [
@@ -174,10 +174,12 @@
       "track_widths": [
         0.0,
         0.127,
+        0.2159,
         0.254,
         0.381,
         0.508,
-        0.762
+        0.762,
+        1.27
       ],
       "via_dimensions": [
         {
@@ -410,7 +412,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "SuperMEZ80-CPM.kicad_pro",
+    "filename": "SuperEMUZ80.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -467,6 +469,18 @@
       {
         "netclass": "PWR",
         "pattern": "+5V"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "VDD"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "VBUS"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "SHIELD"
       }
     ]
   },
@@ -519,6 +533,10 @@
     [
       "d0b67a06-521c-429c-b0a7-be22c54278d6",
       ""
+    ],
+    [
+      "7450f2a1-db01-4f25-b76e-d48b7f840353",
+      "picprog"
     ]
   ],
   "text_variables": {}
